@@ -33,3 +33,22 @@ The Throwable class in Java is the superclass of all errors and exceptions in th
 ### Marker Interface
 A marker interface in Java is an interface that does not contain any methods or fields. It is used to "mark" or "tag" a class with a particular characteristic or capability. The presence of a marker interface on a class informs the Java runtime or other code that the class should be treated in a specific way.
 Now they are not used. Instead of them Annotations are used.
+
+### transient keyword
+Jis bhi variable ko transient kara vo variable ka data serialize nhi hoga.
+
+### Enums
+It is same as class, nut iske object new keyword se nhi bnte.It is a special class that represents group of constants(final variables).enum is short form of enumeration means "specifically listed"
+```java
+enum Color{RED,BLACK,GREEN};
+public class Test{
+    public static void main(String[] args) {
+        Color color=Color.RED;
+        System.out.println(color);
+    }
+}
+```
+
+### Serialization and Deserialization
+1. Serialization-: Converting state of an object into byte stream. Object ke saare properties, attributes except for transient variables ki stream ban jaaegi. Ab us stream ko kahi bhi bhej skte hai like file, database, network etc.
+2. Deserialization-: Reverse of Serialization
