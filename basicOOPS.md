@@ -11,6 +11,7 @@
 ### Constructors
 1. Constructor call hone par pehle memory allocate hogi then parent class ka constructor call hoga fir khudka constructor chalega.
 2. Abstract class and Interface ke dono ke objects nhi hote but still Abstract class ke constructor hote hai kiuki jo class abstract class ko implement kregi uska constructor call hoga toh uska parent abstract class ka bhi call hoga. Interface mai constructor bhi nhi hota.
+3. Even if we don't create constructors, java will itself create a default constructor with no parameter.But if we created a constructor withh parameterised then we can't call default constructor.
 
 ### Interface
 1. Abstract class and Interfaces mai methods ka declaration hota hai, body nhi hoti toh agar method hi ni hai toh object banane ka sense bhi nhi hai isliye un ke paas objects nhi hote.
